@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Awesome Space Travel Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+        <section class="sec-01">
+            <div class="container">
+                <h2 class="main-title">Awesome Space Travel Website</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="images/astro-float-1.jpeg" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Space, the Final Frontier</h3>
+                        <p>These are the voyages of our starfleet. Starfleet is a uniformed space force maintained by the United Federation of Planets ("the Federation") as the principal means for conducting deep space exploration, research, defense, peacekeeping, and diplomacy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-02">
+            <div class="container">
+                <h3 class="section-title">Welcome to Mars</h3>
+                <div class="content">
+                    <div class="image">
+                        <img src="images/astro-mars-1.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">Become Mark Watney!</h4>
+                        <p>With only a meager amount of supplies, the stranded visitor must utilize his wits and spirit to find a way to survive on the hostile planet. Meanwhile, back on Earth, members of NASA and a team of international scientists work tirelessly to bring him home, while his crew mates hatch their own plan for a daring rescue mission.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">The Orbital Platform</h3>
+                <div class="content">
+                    <div class="image-ship">
+                        <img src="images/spaceship-earth-1.jpeg" id="earth">
+                        <img src="images/r-1.png" id="rocket">
+                    <!--    <img src="images/rocket-1.png" id="rocket">
+                        <img src="images/rocket-2.png" id="rocket">
+                        <img src="images/rocket-3.png" id="rocket">
+                        <img src="images/rocket-4.png" id="rocket">-->
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">Fly Around the Earth.</h4>
+                        <p>The three-day journey will see the quartet free-flying through Earth’s orbit, whipping around the planet once every 90 minutes while the passengers float, buoyed by microgravity, and take in panoramic views of our home planet. To cap off the journey, their spacecraft will dive back into the atmosphere for a fiery re-entry and splash down off the coast of Florida. And yes, for all three days in space, the passengers will all have to share a special zero-gravity-friendly toilet located near the top of the capsule. No showering will be available, and crew will all have to sleep in the same reclining seats they will ride in during launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            ScrollReveal({
+                //reset: true,
+                distance: '60px',
+                duartion: 2500,
+                delay: 400
+            })
+
+            ScrollReveal().reveal('.main-title, .section-title', {delay: 500, origin: 'left' });
+            ScrollReveal().reveal('.sec-01 .image, .info', {delay: 600, origin: 'bottom' });
+            ScrollReveal().reveal('.text-box', {delay: 700, origin: 'right' });
+            ScrollReveal().reveal('.sec-02 .image, .sec-03 .image-ship', {delay: 500, origin: 'left' });
+        </script>
+
+    </body>
+</html>
